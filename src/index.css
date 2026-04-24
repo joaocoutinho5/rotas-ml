@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: 35 30% 97%;
+    --foreground: 220 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 15%;
+
+    /* Warm orange — fuel/energy */
+    --primary: 22 92% 52%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 30 100% 60%;
+
+    /* copy — btn */
+    --accent: 152 60% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --secondary: 35 25% 92%;
+    --secondary-foreground: 220 25% 15%;
+
+    --muted: 35 20% 94%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 152 60% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 20% 88%;
+    --input: 35 20% 88%;
+    --ring: 22 92% 52%;
+
+    --radius: 1.25rem;
+
+    /* Result card gradient */
+    --gradient-result: linear-gradient(
+      135deg,
+      hsl(22 92% 52%),
+      hsl(30 100% 60%)
+    );
+    --gradient-bg: linear-gradient(180deg, hsl(35 30% 97%), hsl(35 35% 94%));
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(22 50% 30% / 0.08);
+    --shadow-card: 0 8px 30px -8px hsl(22 50% 30% / 0.12);
+    --shadow-glow: 0 10px 40px -10px hsl(22 92% 52% / 0.45);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-[hsl(var(--border))];
+  }
+
+  body {
+    @apply bg-[hsl(var(--background))] text-[hsl(var(--foreground))];
+    background: var(--gradient-bg);
+    min-height: 100vh;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+@layer utilities {
+  .gradient-result {
+    background: var(--gradient-result);
+  }
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+}
+
+@keyframes pop-in {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-pop-in {
+  animation: pop-in 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.animate-fade-up {
+  animation: fade-up 0.3s ease-out;
+}
