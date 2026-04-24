@@ -1,73 +1,92 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#  Calculadora de Rota e Combustível
 
-Currently, two official plugins are available:
+[![Acessar Projeto](https://img.shields.io/badge/Acessar%20Projeto-Online-success)](https://rotas-ml.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Aplicação web simples desenvolvida para **ajudar entregadores a calcular ganhos, custos de combustível e lucro de cada rota de forma rápida e prática**.
 
-## React Compiler
+----------
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+##  Objetivo do Projeto
 
-## Expanding the ESLint configuration
+Este projeto foi criado com o objetivo de **facilitar a rotina de entregadores**, permitindo que eles consigam:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+-   Calcular o custo real de cada rota
+-   Estimar consumo de combustível
+-   Visualizar lucro de forma clara
+-   Gerar mensagens automáticas para registro dos ganhos
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+A ideia principal é transformar cálculos manuais e repetitivos em algo **rápido, simples e automatizado**, diretamente pelo celular.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+----------
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+##  Tecnologias Utilizadas
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+-   **React**
+-   **Vite**
+-   **Tailwind CSS**
+-   **JavaScript (ES6+)**
+- **TypeScript**
+-   **Lucide Icons**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+----------
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+##  Sobre o Projeto
+
+Este projeto foi desenvolvido com foco em **uso mobile**, já que a maioria dos usuários deve acessá-lo diretamente pelo celular durante ou após as entregas.
+
+A interface foi pensada para ser:
+
+-   Simples e direta
+-   Rápida de usar
+-   Sem distrações
+-   Com inputs grandes e fáceis de interagir
+
+Além disso, a aplicação realiza cálculos em tempo real conforme o usuário preenche os dados da rota.
+
+----------
+
+##  Funcionalidades
+
+-   Cálculo automático de custo da rota
+-   Estimativa de consumo de combustível (km/L)
+-   Cálculo de lucro final
+-   Geração de mensagem formatada para registro
+-   Botão de copiar com feedback visual
+-   Interface responsiva (mobile-first)
+
+----------
+
+##  Objetivos Técnicos
+
+Além do objetivo prático, este projeto também foi desenvolvido para:
+
+-   Praticar manipulação de estado no React
+-   Trabalhar com cálculos em tempo real
+-   Melhorar lógica de programação com TypeScript
+-   Explorar design system com Tailwind CSS
+-   Criar uma UI otimizada para mobile
+
+----------
+
+##  Status do Projeto
+
+> Projeto em constante evolução, com possíveis melhorias futuras como:
+
+-   Salvamento local de dados
+-   Histórico de rotas
+-   Média mensal
+-   Exportação de relatórios
+
+
+----------
+
+##  Observação
+
+Este projeto faz parte do meu processo de aprendizado contínuo em desenvolvimento front-end, com foco em construir soluções práticas para problemas reais do dia a dia.
+
+----------
+
+##  Feedback
+
+Sugestões, melhorias e ideias são sempre bem-vindas — este projeto está em constante evolução.
