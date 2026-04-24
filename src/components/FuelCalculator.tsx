@@ -92,7 +92,7 @@ export default function FuelCalculator() {
           </div>
 
           <h1 className="text-3xl font-bold tracking-tight">
-            Calculadora de Combustível
+            Calculadora de Rotas
           </h1>
 
           <p className="text-[hsl(var(--muted-foreground))] mt-2 text-sm">
@@ -143,7 +143,7 @@ export default function FuelCalculator() {
           />
         </section>
 
-        {/* Result */}
+        {/* Resultado */}
         <section
           className={`rounded-3xl p-6 transition-smooth space-y-5 ${
             hasResult

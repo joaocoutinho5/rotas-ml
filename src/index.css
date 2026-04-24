@@ -11,12 +11,12 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 25% 15%;
 
-    /* Warm orange — fuel/energy */
+    /* Warm orange */
     --primary: 22 92% 52%;
     --primary-foreground: 0 0% 100%;
     --primary-glow: 30 100% 60%;
 
-    /* copy — btn */
+    /* Copy — Btn */
     --accent: 152 60% 45%;
     --accent-foreground: 0 0% 100%;
 
