@@ -106,7 +106,7 @@ export default function FuelCalculator() {
             id="routeValue"
             label="Valor da rota"
             unit="R$"
-            placeholder="Ex: 80,00"
+            placeholder="Ex: 120"
             value={routeValue}
             onChange={setRouteValue}
             icon={<Wallet className="w-5 h-5" strokeWidth={2.5} />}
@@ -116,7 +116,7 @@ export default function FuelCalculator() {
             id="distance"
             label="Distância percorrida"
             unit="km"
-            placeholder="Ex: 120"
+            placeholder="Ex: 28"
             value={distance}
             onChange={setDistance}
             icon={<Route className="w-5 h-5" strokeWidth={2.5} />}
@@ -126,7 +126,7 @@ export default function FuelCalculator() {
             id="consumption"
             label="Consumo do veículo"
             unit="km/L"
-            placeholder="Ex: 12"
+            placeholder="Ex: 6,3"
             value={consumption}
             onChange={setConsumption}
             icon={<Fuel className="w-5 h-5" strokeWidth={2.5} />}
@@ -136,7 +136,7 @@ export default function FuelCalculator() {
             id="price"
             label="Preço do combustível"
             unit="R$/L"
-            placeholder="Ex: 5,89"
+            placeholder="Ex: 4,39"
             value={price}
             onChange={setPrice}
             icon={<DollarSign className="w-5 h-5" strokeWidth={2.5} />}
